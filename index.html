@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+      integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5"
+      crossorigin="anonymous"
+    />
+    "
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Felipe Joseph</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="Images/nintendo.png" alt="Logo Portifolio" />
+      </div>
+      <ul>
+        <li>
+          <img src="Images/linkedin.gif" width="30" />
+          <a
+            target="blank"
+            href="https://www.linkedin.com/in/felipe-almeida-04/"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <img src="Images/github.gif" width="30" />
+          <a target="blank" href="https://github.com/FelipeAlmeida010"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <img src="Images/whatsapp.gif" width="30" />
+          <a target="blank" href="https://wa.me/+5531984466391">Whatsapp</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1>Felipe Joseph S Almeida</h1>
+          <h5>Student Full-Stack Developer</h5>
+        </div>
+
+        <div onClick="displayAbout()" id="arrow">
+          <i id="animation" class="fa-solid fa-square-arrow-up-right"></i>
+        </div>
+
+        <div style="display: none" id="about">
+          <p>
+            Olá! Criei este projeto para ilustrar minhas habilidades no
+            Front-End!
+          </p>
+        </div>
+
+        <div class="form">
+          <div>
+            <p>Deixe seu Contato!</p>
+          </div>
+          <form action="">
+            <input type="text" placeholder="seu melhor e-mail aqui!" />
+            <button>enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script>
+      function displayAbout() {
+        var arrow = document.getElementById("animation");
+        arrow.classList.toggle("rotate");
+        var display = document.getElementById("about");
+        display.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

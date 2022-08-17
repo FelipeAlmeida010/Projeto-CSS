@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:yellow;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+    font-size: 20px;
+       
+}
+ul li {
+    border-radius: 0%;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+
+body{
+    
+    background: url(./Images/mario-luigi-yoschi-figures-163036.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3px;        
+    /*border-bottom: 15px ridge white; coloca efeito de borda em 3D*/        
+}
+
+header ul{
+    display: flex;
+      
+}
+
+header ul li{
+    padding:5px;
+    box-shadow: 1px 1px 10px 1px orangered;
+}
+
+header ul li a{
+    transition: 300ms;
+}
+
+header ul li a:hover{
+    color:orangered;
+    
+}
+.container{
+    padding: 260px;
+    text-align: center;
+    margin:3%;
+    
+}
+
+.container .name h1  {
+    font-size: 60px;
+    
+}
+.container .name h5{
+    font-size: 25px;
+}
+
+#arrow i{
+    color:blue;
+}
+
+#arrow{
+    
+    font-size: 40px;
+    cursor:pointer;
+    animation: blink 1.8s steps(5, start) infinite;   
+}
+
+@keyframes blink{
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+    color:black;
+    font-size: 20px;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    
+    
+    
+}
+
+.form input{
+    width: 59%;
+    color:black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.form p{
+    color:black;
+}
+
+.form button{
+    width: 25%;
+    padding: 5px 10px;
+    background-color: blanchedalmond;
+    color:green;
+    font-weight: 600;
+    box-shadow: 1px 1px 10px 1px green;
+    cursor:pointer;
+    transition: 300ms;
+    border-radius: 8px 8px 8px 8px;
+    margin-top: 20px;
+    margin-left: 2px;
+
+}
+
+.form button:hover{
+    background-color: blanchedalmond;
+    color:black;
+}
+
+@media only screen and (max-width:768px){
+    .form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .container .name h1{
+        font-size: 30px;
+
+    }
+    .container .name h5{
+        font-size: 15px;
+
+    }
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+}
